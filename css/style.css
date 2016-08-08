@@ -1,0 +1,68 @@
+
+
+#testPrepArea{
+	height:700px;
+	overflow:scroll;
+}
+
+#communityChat {
+
+	height:700px;
+}
+
+#welcome{
+
+	position:relative;
+	top: 390px;
+	left:-40px;
+
+}
+
+#chat{
+	height:300px;
+	overflow: scroll;
+}
+
+#possibleAnswers {
+
+	height: 250px;
+}
+
+
+
+#topPanel{
+	height:100px;
+}
+#topText{
+	position:relative;
+	top:9px;
+}
+#seperator{
+	height:200px;
+	
+}
+#identity{
+
+	display: inline-block;
+}
+#button {
+	display:block;
+	width:100%;
+}
+#translateButton{
+	float:right;
+}
+#questionResult {
+	height:90px;
+}
+#questionDiv {
+	display:block;
+	overflow: scroll;
+}
+.answer-button1 {
+
+}
+
+#resultDiv{
+  font-size:20px;
+}
