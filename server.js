@@ -37,12 +37,12 @@ function randomNum(){
 var Question = require('./models/questions.js');
 
 app.get('/questions', function(req, res){
-	var randomQNum = randomNum()
+	
 	//console.log(randomQNum);
 	Question.find({}, function(err, docs) {
     if (!err){ 
-        console.log(docs[randomQNum]);
-        //process.exit();
+        res.json(docs);
+        process.exit();
     } else {throw err;}
 });
 });
