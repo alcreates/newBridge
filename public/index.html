@@ -9,85 +9,98 @@
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
 </head>
 
-<body id="body">
-    <div class="row">
-        <nav>
-            <div class="nav-wrapper card-panel blue-grey" id="topPanel" style="height: 100px">
-                <a href="#" class="brand-logo left">bridges.</a>
-                <p id="topText"> dedicated to helping people become citizen of the United States of America! test</p>
+<body id="body" >
+    <!-- nav bar -->
+  
+         <div class="row" style="height:10px">
+                <span style="font-family: 'Pinyon Script', cursive; font-size:40px; ">Welcome to bridges...</span>
             </div>
-        </nav>
-    </div>
-    <div class="row" style="height:10px">
-    </div>
-    <div class="row  ">
-        <div class="col s6 m6">
-            <div class="card blue-grey darken-1" style="height:650px" id="testPrepArea">
-                <div class="card-content white-text">
-                    <span class="card-title">Test Prep</span><a class='dropdown-button btn' href='#' data-activates='dropdown1' id="translateButton" style="float:right">translate</a>
-                    <div class="row">
-                        <div class="col m12">
-                            <div class="card-panel teal" id="questionDiv">
-                            </div>
-                        </div>
-                    </div>
+        
+            <div class="row">
+                <div id="hero" style="height:200px; opacity:.7; position:relative; top: 15px;">
                 </div>
-                <div class="container" id="panel">
-                </div>
-                <div id="resultDiv" class="container"> </div>
             </div>
-        </div>
-        <div class="col s6 m6">
-            <div class="card blue-grey darken-1" id="communityChat" style="height:420px">
-                <div class="card-content white-text">
-                    <span class="card-title"></span>
-                    <div class="row">ß
-                        <div class="input-field col s6" id="identity">
-                            <i class="material-icons prefix">perm_identity</i>
-                            <input value="" id="nameInput" type="text" class="validate">
-                            <label class="active" for="nameInput"> Name</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col m12 ">
-                            <div class="card-panel white" style="color:black; height:200px;overflow: scroll;" id="chat">
-                            </div>
-                        </div>
-                        <form class="col s12">
-                            <div class="row" style="height:50px">
-                                <div class="input-field col s12 ">
-                                    <i class="material-icons prefix">mode_edit</i>
-                                    <input id="chatTextInput" type="text" class="validate">
-                                    <label class="active" for="chatTextInput">say hello..</label>
+            <div class="container" >
+            <!--seperator row -->
+           
+            <!-- Row with over all page content -->
+            <div class="row">
+                <!-- col with test prep -->
+                <div class="col s8 m8">
+                    <div class="card brown lighten-3" style="height:650px" id="testPrepArea">
+                        <div class="card-content white-text">
+                            <span class="card-title">Civics Practice Test</span><a class='dropdown-button btn' href='#' data-activates='dropdown1' id="translateButton" style="float:right">translate</a>
+                            <div class="row">
+                                <div class="col m12">
+                                    <div class="card-panel teal" id="questionDiv">
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="container" id="panel">
+                        </div>
+                        <div id="resultDiv" class="container"> </div>
+                    </div>
+                </div>
+                <!-- end of test prep -->
+                <!-- col with chat and news feed -->
+                <div class="col s4 m4">
+                    <!-- row with chat -->
+                    <div class="row">
+                        <div class="card brown lighten-1" id="communityChat" style="height:420px">
+                            <div class="card-content white-text">
+                                <span class="card-title"></span>
+                                <div class="row">
+                                    <div class="input-field col s6" id="identity">
+                                        <i class="material-icons prefix">perm_identity</i>
+                                        <input value="" id="nameInput" type="text" class="validate">
+                                        <label class="active" for="nameInput"> Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col m12 ">
+                                        <div class="card-panel white" style="color:black; height:200px;overflow: scroll;" id="chat">
+                                        </div>
+                                    </div>
+                                    <form class="col s12">
+                                        <div class="row" style="height:40px">
+                                            <div class="input-field col s12 ">
+                                                <i class="material-icons prefix">mode_edit</i>
+                                                <input id="chatTextInput" type="text" class="validate">
+                                                <label class="active" for="chatTextInput">say hello..</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of chat -->
+                    <div class="row">
                         <div class="col s12 m12">
-                            <div class="card blue-grey darken-1">
+                            <div class="card brown lighten-1" style="height:200px; position:relative; top: -20px; overflow: scroll; ">
                                 <div class="card-content white-text" id="newsFeed">
-                                    <span class="card-title">News Feed</span>
-                                </div>
-                                <div class="card-action">
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- end of col-->
                 </div>
             </div>
-        </div>
-    </div>
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <script type="text/javascript" src="javascript/app.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi?key=AIzaSyBGVNFrlzQURAt858e34_eOIwdyxzMqv0w">
-    </script>
-    <script type="text/javascript">
-    google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
-    </script>
+                <ul id='dropdown1' class='dropdown-content'>
+                </ul>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+                <script type="text/javascript" src="javascript/app.js"></script>
+                <script type="text/javascript" src="https://www.google.com/jsapi?key=AIzaSyBGVNFrlzQURAt858e34_eOIwdyxzMqv0w">
+                </script>
+                <script type="text/javascript">
+                google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
+                </script>
 </body>
 
 </html>

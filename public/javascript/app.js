@@ -1,4 +1,7 @@
+$.backstretch("https://s-media-cache-ak0.pinimg.com/736x/17/0d/9c/170d9cdcb5432859db545ac625ac2e87.jpg");
 
+
+$("#hero").backstretch("./images/hero.jpg");
 //Chat feature created with firebase
 var messagesRef = new Firebase("https://bridgeschat.firebaseio.com/");
 //Chat box values
