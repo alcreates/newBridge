@@ -42,14 +42,14 @@ app.get('/questions', function(req, res){
 	Question.find({}, function(err, docs) {
     if (!err){ 
         res.json(docs);
-        process.exit();
+        // process.exit();
     } else {throw err;}
 });
 });
 
-app.get('/', function(req, res){
-		res.sendFile(path.join(__dirname + '/public/index.html'));
-	});
+// app.get('/', function(req, res){
+// 		res.sendFile(path.join(__dirname + './public/index.html'));
+// 	});
 
 
 app.listen(PORT, function(){

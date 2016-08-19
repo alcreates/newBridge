@@ -88,6 +88,7 @@ var incorrect = 0;
 // start function
 $.get(currentURL + '/questions', function( data ) {
   console.log(data);
+  questions = null;
   questions = data;
   start();
   
