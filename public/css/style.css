@@ -6,4 +6,20 @@
 
  .answer-button{
  	margin:5px;
+ 	overflow:scroll;
+
+ }
+ .answer-button2{
+ 	margin:5px;
+ 	overflow: scroll;
+ }
+ #testPrepArea{
+ 	overflow: scroll;
+ }
+ #identity{
+ 	position:relative;
+ 	top:-20px;
+ }
+ #nameInput{
+ 	width:100%;
  }
