@@ -50,7 +50,7 @@ messagesRef.limitToLast(10).on('child_added',function(snapshot){
 var feedcontainer= document.getElementById("newsFeed")
 var feedurl="http://rss.cnn.com/rss/edition_world.rss"
 var feedlimit=5
-var rssoutput="<b>Latest CNN World News:</b><br /><ul>"
+var rssoutput="<b>World News:</b><br /><ul>"
 
 function rssfeedsetup(){
 var feedpointer = new google.feeds.Feed(feedurl) //Google Feed API method
@@ -125,7 +125,7 @@ function display(){
   $("#resultDiv").empty();
 	$("#panel").empty();
 	$("#questionDiv").html("<h4>" + questions[questionNumber].question + "</h4>");
-      for (var i = 0; i <= questions[this.questionNumber].answers.length; i++){
+      for (var i = 0; i < questions[this.questionNumber].answers.length; i++){
       $("#panel").append("<a  style='display:block;width:100%'class='answer-button btn-large brown lighten-3 ' id='button'" + "data-name='" + questions[this.questionNumber].answers[i] + "''>" + questions[this.questionNumber].answers[i]+ "</a>");
 
     	}
