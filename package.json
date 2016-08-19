@@ -1,0 +1,25 @@
+{
+  "name": "newbridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcreates/newBridge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alcreates/newBridge/issues"
+  },
+  "homepage": "https://github.com/alcreates/newBridge#readme"
+}
