@@ -180,7 +180,7 @@ $(document).on("click", '.answer-button1', function(e) {
 	
 	$("#panel").empty();
 
-  var queryUrl = 'https:translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160317T225805Z.24fe4d3e49b00f5f.6bcc824a7ac0b4ec0da91a97f022d7045d9b121c&text=' +  questions[questionNumber].question +  '&lang=' + $(event.target).attr("value");
+  var queryUrl = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160317T225805Z.24fe4d3e49b00f5f.6bcc824a7ac0b4ec0da91a97f022d7045d9b121c&text=' +  questions[questionNumber].question +  '&lang=' + $(event.target).attr("value");
 
 	$.ajax({url: queryUrl, method : 'GET'})
 		.done(function(response){
@@ -197,7 +197,7 @@ $(document).on("click", '.answer-button1', function(e) {
   
 });
 
-var queryUrl2 = 'https:translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160317T225805Z.24fe4d3e49b00f5f.6bcc824a7ac0b4ec0da91a97f022d7045d9b121c&text=' +  questions[questionNumber].answers[0] +  '&lang=' + $(event.target).attr("value");
+var queryUrl2 = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160317T225805Z.24fe4d3e49b00f5f.6bcc824a7ac0b4ec0da91a97f022d7045d9b121c&text=' +  questions[questionNumber].answers[0] +  '&lang=' + $(event.target).attr("value");
 
 		$.ajax({url: queryUrl2, method : 'GET'})
 		.done(function(response){
@@ -216,7 +216,7 @@ var queryUrl2 = 'https:translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl
 
 });
 
-var queryUrl3 = 'https:translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160317T225805Z.24fe4d3e49b00f5f.6bcc824a7ac0b4ec0da91a97f022d7045d9b121c&text=' +  questions[questionNumber].answers[1] +  '&lang=' + $(event.target).attr("value");
+var queryUrl3 = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160317T225805Z.24fe4d3e49b00f5f.6bcc824a7ac0b4ec0da91a97f022d7045d9b121c&text=' +  questions[questionNumber].answers[1] +  '&lang=' + $(event.target).attr("value");
 
 		$.ajax({url: queryUrl3, method : 'GET'})
 		.done(function(response){
@@ -232,7 +232,7 @@ var queryUrl3 = 'https:translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl
 
 });
 
-var queryUrl4= 'https:translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160317T225805Z.24fe4d3e49b00f5f.6bcc824a7ac0b4ec0da91a97f022d7045d9b121c&text=' +  questions[questionNumber].answers[2] +  '&lang=' + $(event.target).attr("value");
+var queryUrl4= 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160317T225805Z.24fe4d3e49b00f5f.6bcc824a7ac0b4ec0da91a97f022d7045d9b121c&text=' +  questions[questionNumber].answers[2] +  '&lang=' + $(event.target).attr("value");
 
 		$.ajax({url: queryUrl4, method : 'GET'})
 		.done(function(response){
@@ -248,7 +248,7 @@ var queryUrl4= 'https:translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.
 
 });
 
-var queryUrl5 = 'https:translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160317T225805Z.24fe4d3e49b00f5f.6bcc824a7ac0b4ec0da91a97f022d7045d9b121c&text=' +  questions[questionNumber].answers[3] +  '&lang=' + $(event.target).attr("value");
+var queryUrl5 = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160317T225805Z.24fe4d3e49b00f5f.6bcc824a7ac0b4ec0da91a97f022d7045d9b121c&text=' +  questions[questionNumber].answers[3] +  '&lang=' + $(event.target).attr("value");
 
 		$.ajax({url: queryUrl5, method : 'GET'})
 		.done(function(response){
