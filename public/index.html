@@ -13,95 +13,93 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body id="body" >
+<body id="body">
     <!-- nav bar -->
-  
-         <div class="row" style="height:10px">
-                <span style="font-family: 'Pinyon Script', cursive; font-size:40px; ">Welcome to bridges...</span>
-            </div>
-        
-            <div class="row">
-                <div id="hero" style="height:200px; opacity:.7; position:relative; top: 15px;">
+    <div class="row" style="height:10px">
+        <span style="font-family: 'Pinyon Script', cursive; font-size:40px; ">Welcome to bridges...</span>
+    </div>
+    <div class="row">
+        <div id="hero" style="height:200px; opacity:.7; position:relative; top: 15px;">
+        </div>
+    </div>
+    <div class="container">
+        <!--seperator row -->
+        <!-- Row with over all page content -->
+        <div class="row">
+            <!-- col with test prep -->
+            <div class="col s8 m8">
+                <div class="card brown lighten-1" style="height:650px" id="testPrepArea">
+                    <div class="card-content white-text">
+                        <span class="card-title">Civics Practice Test</span><a class='dropdown-button btn brown lighten-3' href='#' data-activates='dropdown1' id="translateButton" style="float:right">translate</a>
+                        <div class="row">
+                            <div class="col m12">
+                                <div class="card-panel brown lighten-3" id="questionDiv">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" id="panel">
+                    </div>
+                    <div id="resultDiv" class="container"> </div>
                 </div>
             </div>
-            <div class="container" >
-            <!--seperator row -->
-           
-            <!-- Row with over all page content -->
-            <div class="row">
-                <!-- col with test prep -->
-                <div class="col s8 m8">
-                    <div class="card brown lighten-3" style="height:650px" id="testPrepArea">
+            <!-- end of test prep -->
+            <!-- col with chat and news feed -->
+            <div class="col s4 m4">
+                <!-- row with chat -->
+                <div class="row">
+                    <div class="card brown lighten-1 " id="communityChat" style="height:435px">
                         <div class="card-content white-text">
-                            <span class="card-title">Civics Practice Test</span><a class='dropdown-button btn' href='#' data-activates='dropdown1' id="translateButton" style="float:right">translate</a>
+                            <span class="card-title"></span>
                             <div class="row">
-                                <div class="col m12">
-                                    <div class="card-panel brown darken-4" id="questionDiv">
+                                <div class="input-field col s6 " id="identity">
+                                    <i class="material-icons prefix">perm_identity</i>
+                                    <input value="" id="nameInput" type="text" class="validate ">
+                                    <label class="active" for="nameInput"> Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col m12 ">
+                                    <div class="card-panel brown lighten-3" style="color:white; height:200px;overflow: scroll;" id="chat">
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="col s12">
+                                <div class="row" style="height:40px">
+                                    <div class="input-field col s12 ">
+                                        <i class="material-icons prefix">mode_edit</i>
+                                        <input id="chatTextInput" type="text" class="validate ">
+                                        <label class="active" for="chatTextInput">say hello..</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="card brown lighten-1" style="height:208px; position:relative;   overflow: scroll; ">
+                                    <div class="card-content white-text" id="newsFeed">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="container" id="panel">
-                        </div>
-                        <div id="resultDiv" class="container"> </div>
                     </div>
-                </div>
-                <!-- end of test prep -->
-                <!-- col with chat and news feed -->
-                <div class="col s4 m4">
-                    <!-- row with chat -->
-                    <div class="row">
-                        <div class="card brown lighten-1" id="communityChat" style="height:420px">
-                            <div class="card-content white-text">
-                                <span class="card-title"></span>
-                                <div class="row">
-                                    <div class="input-field col s6" id="identity">
-                                        <i class="material-icons prefix">perm_identity</i>
-                                        <input value="" id="nameInput" type="text" class="validate">
-                                        <label class="active" for="nameInput"> Name</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col m12 ">
-                                        <div class="card-panel white" style="color:black; height:200px;overflow: scroll;" id="chat">
-                                        </div>
-                                    </div>
-                                    <form class="col s12">
-                                        <div class="row" style="height:40px">
-                                            <div class="input-field col s12 ">
-                                                <i class="material-icons prefix">mode_edit</i>
-                                                <input id="chatTextInput" type="text" class="validate">
-                                                <label class="active" for="chatTextInput">say hello..</label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of chat -->
-                    <div class="row">
-                        <div class="col s12 m12">
-                            <div class="card brown lighten-1" style="height:200px; position:relative; top: -20px; overflow: scroll; ">
-                                <div class="card-content white-text" id="newsFeed">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of col-->
                 </div>
             </div>
-                <ul id='dropdown1' class='dropdown-content'>
-                </ul>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-                <script type="text/javascript" src="javascript/app.js"></script>
-                <script type="text/javascript" src="https://www.google.com/jsapi?key=AIzaSyBGVNFrlzQURAt858e34_eOIwdyxzMqv0w">
-                </script>
-                <script type="text/javascript">
-                google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
-                </script>
+            <!-- end of chat -->
+            <!-- end of col-->
+        </div>
+    </div>
+    <ul id='dropdown1' class='dropdown-content'>
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script type="text/javascript" src="javascript/app.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?key=AIzaSyBGVNFrlzQURAt858e34_eOIwdyxzMqv0w">
+    </script>
+    <script type="text/javascript">
+    google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
+    </script>
 </body>
 
 </html>

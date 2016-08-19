@@ -125,7 +125,7 @@ function display(){
 	$("#panel").empty();
 	$("#questionDiv").html("<h4>" + questions[questionNumber].question + "</h4>");
       for (var i = 0; i<questions[this.questionNumber].answers.length; i++){
-      $("#panel").append("<a  style='display:block;width:100%'class='answer-button btn brown darken-4' id='button'" + "data-name='" + questions[this.questionNumber].answers[i] + "''>" + questions[this.questionNumber].answers[i]+ "</a>");
+      $("#panel").append("<a  style='display:block;width:100%'class='answer-button btn brown lighten-3 ' id='button'" + "data-name='" + questions[this.questionNumber].answers[i] + "''>" + questions[this.questionNumber].answers[i]+ "</a>");
 
     	}
 }
@@ -141,7 +141,7 @@ $(document).on("click", ".answer-button", function(e) {
     	$("#resultDiv").html("<div class='card-panel brown darken-4 white-text'>Correct!!!!</div><a class='answer-button3 waves-effect waves-red btn brown'>next</a>");
     	correct++;
     } else {
-   	    $("#resultDiv").html("<div class='card-panel brown darken-4 white-text'> The correct answer is " + questions[questionNumber].correctAnswer + "</div><a class='answer-button3 waves-effect waves-light btn'>next</a>");
+   	    $("#resultDiv").html("<div class='card-panel brown darken-4 white-text'> The correct answer is " + questions[questionNumber].correctAnswer + "</div><a class='answer-button3 waves-effect waves-red btn brown'>next</a>");
      	incorrect++;
     }
   console.log(correct);
