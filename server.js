@@ -3,6 +3,8 @@ var app = express();
 var bodyParser = require('body-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
+//var translate = require('yandex-translate')(key);
+ 
 
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({
@@ -14,7 +16,7 @@ var PORT = process.env.PORT || 8080;
 
 
 
-
+//mongo ds145385.mlab.com:45385/bridges -u alcreates -p Vapor121
 
 //Database configuration
 mongoose.connect('mongodb://alcreates:Vapor121@ds145385.mlab.com:45385/bridges');
@@ -35,7 +37,7 @@ function randomNum(){
 //Require Schemas
 
 var Question = require('./models/questions.js');
-
+var Language = require('./models/languages.js');
 app.get('/questions', function(req, res){
 	
 	//console.log(randomQNum);
@@ -46,6 +48,15 @@ app.get('/questions', function(req, res){
     } else {throw err;}
 });
 });
+
+app.get('/transcode', function(req, res){
+	Language.find({}, function(err, docs){
+		if(!err){
+			res.json(docs)
+		}else {throw err;}
+	})
+
+})
 
 // app.get('/', function(req, res){
 // 		res.sendFile(path.join(__dirname + './public/index.html'));
