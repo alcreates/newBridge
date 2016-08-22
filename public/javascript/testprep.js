@@ -1,7 +1,4 @@
 // Test Prep -------------------------------------------------------------------------------------------------
-
-
-
 var languageList = null
 
 // Gobal Variable -------------------------------------------------------------------------------------------
@@ -57,8 +54,6 @@ function languages(){
     });
 }
 
-//translation input
-var translationInput = $("#translation");
 
 //funtion to format string. 
 function toTitleCase(str)
@@ -73,6 +68,10 @@ function codeFinder(lan){
         }
     }
 }
+
+//translation input
+var translationInput = $("#translation");
+
 
 //User messages 
 translationInput.keydown(function(e) {
